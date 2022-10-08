@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<style>
+	body {
+	  margin: 0;
+	  padding: 0;
+	  background: #DDD;
+	  font-size: 16px;
+	  color: white;
+	  font-family: 'Roboto', sans-serif;
+	  font-weight: 300;
+	  background-image: url("https://w.wallhaven.cc/full/4l/wallhaven-4l6eep.png");
+	  background-attachment: fixed; 
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	}
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      .header .home {
+        font-size: 25px;
+        color: white;
+		text-decoration: none;
+      }
+	  .tablinks{
+        font-size: 25px;
+        color: white;
+		text-decoration: none;
+      }
+  
+      .nav-items {
+		cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 20px;
+      }
+  
+      .nav-items a {
+        text-decoration: none;
+        color: white;
+        padding: 35px 20px;
+      }
+	  
+	  .extra a {
+        text-decoration: none;
+        color: white;
+        padding: 35px 20px;
+      }
+	  
+	  .nav-items a.eng:hover {
+        text-decoration: none;
+        color: green;
+        padding: 35px 20px;
+      }
+	  
+	  .nav-items a.science:hover {
+        text-decoration: none;
+        color: red;
+        padding: 35px 20px;
+      }
+	  
+	  .nav-items a.tech:hover {
+        text-decoration: none;
+        color: orange;
+        padding: 35px 20px;
+      }
+	  
+	  .nav-items a.maths:hover {
+        text-decoration: none;
+        color: blue;
+        padding: 35px 20px;
+      }
+	  
+	  
+	  
+	  
+	  @import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:4em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  background-color: black;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: orange;
+}
+
+$dark: #4D394B;
+$darker: #2E222D;
+$darkest: darken($darker, 5);
+
+$primary: #4C9689;
+$invalid: #e74c3c;
+$valid: $primary;
+
+.sudoku-container {
+	border: $border solid $darkest;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 2px;
+	
+	&::before, &::after {
+		position: absolute;
+		border-style: solid;
+		pointer-events: none;
+		content: "";
+	}
+	&::before {
+		width: 156px;
+		border-width: 0 4px;
+		border-color: transparent $darkest transparent $darkest;
+		top: $border;
+		left: 160px;
+		bottom: $border;
+	}	
+	&::after {
+		height: 156px;
+		border-width: 4px 0;
+		border-color: $darkest transparent $darkest transparent;
+		left: $border;
+		top: 160px;
+		right: $border;
+	}	
+}
+
+tr:nth-child(1) td:nth-child(3) input,
+tr:nth-child(1) td:nth-child(6) input {
+    margin: 0 10px 0 0;
+}
+
+tr:nth-child(3) input,
+tr:nth-child(6) input {
+    margin: 0 0 10px 0;
+}
+
+
+.sudoku-container input {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 20px;
+	padding: 0;
+	border: 3px $darker solid;
+	background-color: black;
+	color: #eee;
+	
+	&:focus {
+		border-color: $primary;
+	}
+	
+		&.highlight {
+			background-color: #29B6F6;
+			border-color: #29B6F6;	
+		}
+	
+	&.disabled {
+		cursor: not-allowed;
+		background-color: $primary;
+		border-color: $primary;
+		
+		&.highlight {
+			background-color: #29B6F6;
+			border-color: #29B6F6;	
+		}
+	}
+}
+
+.sudoku-container .invalid {
+	border-color: red;
+	
+	&:focus {
+		border-color: red;
+	}	
+}
+
+.sudoku-container.valid-matrix {
+	border-color: green;
+}
+
+#controls {
+	margin: 20px 0;
+}
+
+.btn.primary {
+	background-color: $primary;
+	box-shadow: inset 0 -3px darken($primary, 10);
+}
+
+ol {
+  display: table;
+  margin: 0 auto;
+}
+
+
+</style>
+<body onload="openTab(event, 'home')">
+	<header class="header">
+        <a href="home.html" class="home" color="white" >HOME</a>
+        <nav class="nav-items">
+             <a class="science" href="Science.html">SCIENCE</a>
+             
+        </nav>
+    </header>
+	<center>
+	
+	
+	</div>
+	
+	
+	<div class="nav-items" >
+		<a class="tablinks" onclick="openTab(event, 'Course')" >MINERALS</a>
+		
+		
+	</div>
+	<div class="nav-items" >
+		<a class="tablinks" onclick="openTab(event, 'Course')" >Rare Earth</a>
+		
+		
+	</div>
+
+	<p>Rare earth elements (REE) are a very modern mineral, in that large parts of the modern economy rely on them. Super-conductors, X-ray machines, nuclear batteries and PET-scan detectors are</p><p> just some of the technologies that rely on rare earth elements such as promethium, thulium and holmium. China controls 95% of the world’s supply of REEs and the search is on for alternative</p><p> sources. Two sites in western South Africa have attracted investors attention: Zandkopsdrift (Northern Cape) and, close by but in the adjoining province of the Western Cape, Steenkampskraa</p>
+	<br><br>
+	<div class="nav-items" >
+		<a class="tablinks" onclick="openTab(event, 'Course')" >Diamonds</a>
+		
+		
+	</div>
+
+	
+	<p>Another change took place in the diamond ownership environment in 2018 when Ekapa Mining paid R300-million to buy out Petra Diamonds from its Kimberley Ekapa Mining Joint Venture (KEM JV).</p><p> Petra held 75.9% of the old De Beers assets that include Kimberley Underground Mines, various dumps around the town and underground resources at Bultfontein, Dutoitspan and Wesselton.</p><p> Ekapa’s plans to keep the mines and tailings in profit entail the use of modern technology. This includes an automated pan plant in support of an upgraded Combined Treatment Plant.</p>
+	
+	
+	<div class="nav-items" >
+		<a class="tablinks" onclick="openTab(event, 'Course')" >Quartz</a>
+		
+		
+	</div>
+
+	<p>Quartz is used in the manufacture of semiconductors, fibre-optic cables and ceramics. Fused quartz improves the efficiency of solar powered devices and quartz glass is used in the</p><p> manufacture of photovoltaic cells. Positive tests have been done at Riemvasmaak where the silica content is 99.98% in some places. Difeme, a black start-up, will mine the quartz with technical help</p><p> from Mintek. Investors are sought for the development of a processing and beneficiation plant for high-purity quartz</p>
+	 
+	<div class="nav-items" >
+		<a class="tablinks" onclick="openTab(event, 'Course')" >Iron ore and manganese</a>
+		
+		
+	</div> 
+	 
+	 
+
+<p>In 2019, Sitatunga Resources purchased the East Manganese project on the Hotazel-Kalahari ore belt from Southern Ambition. Menar Holdings, which controls a majority share in Sitatunga, is mostly invested in coal.</p>
+
+<p>Afrimat, a listed construction materials supplier and industrial minerals group, has added open-pit mining to its portfolio with the R322-million acquisition of the Diro mine, which had been in</p><p> business rescue. The Diro mine has proven run-of-mine reserves of 10-million tons.</p>
+<div class="nav-items" >
+		<a class="tablinks" onclick="openTab(event, 'Course')" >Mining Assets in Northen Cape</a>
+		
+		
+	</div> 
+		
+	<img src="graph1.png" alt="Italian Trulli">
+	
+	</center>
+	
+</body>
+</html>
