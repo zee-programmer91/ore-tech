@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/zwelisha/student_work/SecondYearFirstSemester/submission-webdev-exercise'
+egrep -oh '[0-9a-zA-Z_\.\-]+:.*?@ .*'  Makefile | \
+awk 'BEGIN {FS = ":.*?@ "}; {printf "\033[36m%-30s\033[0m %s\n", $1, $2}' | sort
+make: Leaving directory '/home/zwelisha/student_work/SecondYearFirstSemester/submission-webdev-exercise'
+ 
