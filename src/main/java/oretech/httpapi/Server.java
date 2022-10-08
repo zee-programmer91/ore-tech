@@ -30,10 +30,11 @@ public class Server {
             config.jsonMapper(createGsonMapper());
         });
 
-        this.appServer.get("/",                 WebApiServerHandler::getHomePage);
-        this.appServer.get("/javascript.js",    WebApiServerHandler::getJavascript);
-        this.appServer.get("/main.css",         WebApiServerHandler::getCSS);
-
+        this.appServer.get("/",                     WebApiServerHandler::getHomePage);
+        this.appServer.get("/javascript.js",        WebApiServerHandler::getJavascript);
+        this.appServer.get("/index.css",            WebApiServerHandler::getCSS);
+        this.appServer.get("/limpopo",              WebApiServerHandler::getLimpopoPage);
+        this.appServer.get("/images/limpopo.jpg",       WebApiServerHandler::getLimpopoImage);
     }
 
     /**

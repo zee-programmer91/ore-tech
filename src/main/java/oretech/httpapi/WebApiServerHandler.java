@@ -10,7 +10,7 @@ import java.util.Scanner;
 import org.json.JSONObject;
 
 
-public class WebApiServerHandler {
+public class   WebApiServerHandler {
    public static void getHomePage(Context context) {
       context.contentType("text/html");
 
@@ -68,7 +68,7 @@ public class WebApiServerHandler {
 
       try {
          // Read file
-         File myObj = new File("src/main/resources/html/css/main.css");
+         File myObj = new File("src/main/resources/html/css/index.css");
          Scanner myReader = new Scanner(myObj);
 
          // Read file content
@@ -84,5 +84,55 @@ public class WebApiServerHandler {
 
       context.status(HttpCode.OK);
       context.result(css.toString());
+   }
+
+   public static void getLimpopoPage(Context context) {
+      context.contentType("text/html");
+
+      StringBuilder limpopoHTML = new StringBuilder();
+
+      try {
+         // Read file
+         File myObj = new File("src/main/resources/html/limpopo.html");
+         Scanner myReader = new Scanner(myObj);
+
+         // Read file content
+         while (myReader.hasNextLine()) {
+           String data = myReader.nextLine();
+           limpopoHTML.append(data);
+         }
+         myReader.close();
+      } catch (FileNotFoundException e) {
+         System.out.println("An error occurred.");
+         e.printStackTrace();
+      }
+
+      context.status(HttpCode.OK);
+      context.result(limpopoHTML.toString());
+   }
+
+   public static void getLimpopoImage(Context context) {
+      context.contentType("text/html");
+
+      StringBuilder limpopoHTML = new StringBuilder();
+
+      try {
+         // Read file
+         File myObj = new File("src/main/resources/html/limpopo.html");
+         Scanner myReader = new Scanner(myObj);
+
+         // Read file content
+         while (myReader.hasNextLine()) {
+           String data = myReader.nextLine();
+           limpopoHTML.append(data);
+         }
+         myReader.close();
+      } catch (FileNotFoundException e) {
+         System.out.println("An error occurred.");
+         e.printStackTrace();
+      }
+
+      context.status(HttpCode.OK);
+      context.result(limpopoHTML.toString());
    }
 }

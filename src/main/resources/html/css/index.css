@@ -1,0 +1,34 @@
+.hide{
+   border-radius: 5px;
+   text-align: center;
+   position: absolute;
+   margin: 0 auto;
+   padding: 10px 20px;
+   border: 1px solid #644666;
+   color: azure;
+   font-size: 12px;
+}
+
+.lesotho-txt, .EC-txt, .FS-txt,
+.Gauteng-txt, .Limpopo-txt,
+.Mpumalanga-txt, .KZN-txt,
+.WC-txt, .NW-txt, .NC-txt {
+   top: 80%;
+   left: 60%;
+}
+
+body {
+   text-align: center;
+   background-color: rgba(6, 38, 57) ;
+}
+
+svg {
+   height: 1000px;
+}
+#text-col {
+   color: rgb(237, 245, 252);
+   font-size: 20px;
+   text-align: left;
+   padding-left: 10px;
+   font-family: 'Fira Sans', sans-serif;
+}

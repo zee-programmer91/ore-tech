@@ -50,6 +50,7 @@ $(document).ready(function(){
         $(".hide").hide();
         $(".KZN-txt").fadeIn(300);
       });
+      
 
     $(".marker-WC").hover(function(){
         $(".hide").hide();
@@ -89,81 +90,91 @@ $(document).ready(function(){
 
 
 function changeLesothoFill() {
-    lesotho.style.fill = "rgb(0, 255, 255)";
+    lesotho.style.fill = "rgb(160, 170, 187)";
 }
 
 function changeEasternCapeFill() {
-    easternCape.style.fill = "rgb(0, 255, 255)";
+    easternCape.style.fill = "rgb(160, 170, 187)";
 }
 
 function changeFreeStateFill() {
-    freeState.style.fill = "rgb(0, 255, 255)";
+    freeState.style.fill = "rgb(160, 170, 187)";
 }
 
 function changeGautengFill() {
-    gauteng.style.fill = "rgb(0, 255, 255)";
+    gauteng.style.fill = "rgb(160, 170, 187)";
 }
 
 function changeLimpopoFill() {
-    limpopo.style.fill = "rgb(0, 255, 255)";
+    limpopo.style.fill = "rgb(160, 170, 187)";
 }
 
 function changeMpumalangaFill() {
-    mpumalanga.style.fill = "rgb(0, 255, 255)";
+    mpumalanga.style.fill = "rgb(160, 170, 187)";
 }
 
 function changeNorthernCapeFill() {
-    northernCape.style.fill = "rgb(0, 255, 255)";
+    northernCape.style.fill = "rgb(160, 170, 187)";
 }
 
 function changeKwaZuluNatalFill() {
-    kwaZuluNatal.style.fill = "rgb(0, 255, 255)";
+    kwaZuluNatal.style.fill = "rgb(160, 170, 187)";
 }
 
 function changeNorthWestFill() {
-    northWest.style.fill = "rgb(0, 255, 255)";
+    northWest.style.fill = "rgb(160, 170, 187)";
 }
 
 function changeWesternCapeFill() {
-    westernCape.style.fill = "rgb(0, 255, 255)";
+    westernCape.style.fill = "rgb(160, 170, 187)";
 }
 
 function changeLesothoBack() {
-    lesotho.style.fill = "rgb(224, 101, 101)  ";
+    lesotho.style.fill = "rgb(105, 105, 105)  ";
+    document.getElementById("text-Lesotho").style.display = "none";
 }
 
 function changeEasternCapeBack() {
-    easternCape.style.fill = "rgb(224, 101, 101)  ";
+    easternCape.style.fill = "rgb(105, 105, 105)  ";
+    document.getElementById("text-EC").style.display = "none";
 }
 
 function changeFreeStateBack() {
-    freeState.style.fill = "rgb(224, 101, 101)  ";
+    freeState.style.fill = "rgb(105, 105, 105)  ";
+    document.getElementById("text-FS").style.display = "none";
 }
 
 function changeGautengBack() {
-    gauteng.style.fill = "rgb(224, 101, 101)  ";
+    gauteng.style.fill = "rgb(105, 105, 105)  ";
+    document.getElementById("text-Gauteng").style.display = "none";
 }
 
 function changeLimpopoBack() {
-    limpopo.style.fill = "rgb(224, 101, 101)  ";
+    limpopo.style.fill = "rgb(105, 105, 105)  ";
+    document.getElementById("text-Limpopo").style.display = "none";
 }
 
 function changeMpumalangaBack() {
-    mpumalanga.style.fill = "rgb(224, 101, 101)  ";
+    mpumalanga.style.fill = "rgb(105, 105, 105)  ";
+    document.getElementById("text-Mpumalanga").style.display = "none";
 }
 
 function changeNorthernCapeBack() {
-    northernCape.style.fill = "rgb(224, 101, 101)  ";
+    northernCape.style.fill = "rgb(105, 105, 105)  ";
+    document.getElementById("text-NC").style.display = "none";
 }
 
 function changeKwaZuluNatalBack() {
-    kwaZuluNatal.style.fill = "rgb(224, 101, 101)  ";
+    kwaZuluNatal.style.fill = "rgb(105, 105, 105)";
+    document.getElementById("text-kzn").style.display = "none";
 }
 
 function changeNorthWestBack() {
-    northWest.style.fill = "rgb(224, 101, 101)  ";
+    northWest.style.fill = "rgb(105, 105, 105)  ";
+    document.getElementById("text-NW").style.display = "none";
 }
 
 function changeWesternCapeBack() {
-    westernCape.style.fill = "rgb(224, 101, 101)  ";
+    westernCape.style.fill = "rgb(105, 105, 105)  ";
+    document.getElementById("text-WC").style.display = "none";
 }
