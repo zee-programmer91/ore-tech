@@ -5,7 +5,12 @@ import io.javalin.http.HttpCode;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.awt.image.BufferedImage;
 import java.util.Scanner;
+
+import javax.imageio.ImageIO;
 
 import org.json.JSONObject;
 
@@ -111,28 +116,23 @@ public class   WebApiServerHandler {
       context.result(limpopoHTML.toString());
    }
 
-   public static void getLimpopoImage(Context context) {
-      context.contentType("text/html");
+   // public static void getLimpopoImage(Context context) {
+   //    context.contentType("image/jpeg");
 
-      StringBuilder limpopoHTML = new StringBuilder();
+   //    int width = 963;    //width of the image
+   //    int height = 640;   //height of the image
+   //    BufferedImage image = null;
+   //    File file = null;
 
-      try {
-         // Read file
-         File myObj = new File("src/main/resources/html/limpopo.html");
-         Scanner myReader = new Scanner(myObj);
+   //    try{
+   //      file = new File("src/main/resources/html/limpopo.jpg");
+   //      image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+   //      image = ImageIO.read(file);
+   //    }catch(Exception e){
+   //      e.printStackTrace();
+   //    }
 
-         // Read file content
-         while (myReader.hasNextLine()) {
-           String data = myReader.nextLine();
-           limpopoHTML.append(data);
-         }
-         myReader.close();
-      } catch (FileNotFoundException e) {
-         System.out.println("An error occurred.");
-         e.printStackTrace();
-      }
-
-      context.status(HttpCode.OK);
-      context.result(limpopoHTML.toString());
-   }
+   //    context.result(image.toString());
+   // }
 }
+

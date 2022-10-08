@@ -32,6 +32,15 @@ kwaZuluNatal.addEventListener("mouseleave", changeKwaZuluNatalBack);
 northWest.addEventListener("mouseleave", changeNorthWestBack);
 westernCape.addEventListener("mouseleave", changeWesternCapeBack);
 
+let limpopoImg = document.getElementById("limpopo-img");
+var downloadingImage = new Image();
+
+downloadingImage.onload = function(){
+    limpopoImg.src = this.src;
+};
+
+downloadingImage.src = "images/limpopo.jpg";
+
 
 $(document).ready(function(){
     $(".hide").hide();
