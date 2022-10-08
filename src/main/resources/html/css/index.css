@@ -23,9 +23,21 @@ body {
 }
 
 svg {
-   height: 1000px;
+   height: 1100px;
 }
 
+#svg- {
+   padding-top: 300px;
+   padding-right: 100px;
+}
+
+.thisLimpopo {
+   padding-top: 20px;
+}
+
+.limpImage {
+   text-align: left;
+}
 
 #text-col {
    color: rgb(237, 245, 252);

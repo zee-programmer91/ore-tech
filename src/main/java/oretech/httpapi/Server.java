@@ -62,7 +62,7 @@ public class Server {
 
     /**
      * Start the application server
-     *
+     * width: 100%; height: auto; 
      * @param port the port for the app server
      */
     public void start(int port) {
