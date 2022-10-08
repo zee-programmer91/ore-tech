@@ -116,23 +116,29 @@ public class   WebApiServerHandler {
       context.result(limpopoHTML.toString());
    }
 
-   // public static void getLimpopoImage(Context context) {
-   //    context.contentType("image/jpeg");
+   public static void getNorthenCapePage(Context context) {
+      context.contentType("text/html");
 
-   //    int width = 963;    //width of the image
-   //    int height = 640;   //height of the image
-   //    BufferedImage image = null;
-   //    File file = null;
+      StringBuilder limpopoHTML = new StringBuilder();
 
-   //    try{
-   //      file = new File("src/main/resources/html/limpopo.jpg");
-   //      image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
-   //      image = ImageIO.read(file);
-   //    }catch(Exception e){
-   //      e.printStackTrace();
-   //    }
+      try {
+         // Read file
+         File myObj = new File("src/main/resources/html/northerncape.html");
+         Scanner myReader = new Scanner(myObj);
 
-   //    context.result(image.toString());
-   // }
+         // Read file content
+         while (myReader.hasNextLine()) {
+           String data = myReader.nextLine();
+           limpopoHTML.append(data);
+         }
+         myReader.close();
+      } catch (FileNotFoundException e) {
+         System.out.println("An error occurred.");
+         e.printStackTrace();
+      }
+
+      context.status(HttpCode.OK);
+      context.result(limpopoHTML.toString());
+   }
 }
 

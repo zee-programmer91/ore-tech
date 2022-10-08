@@ -34,7 +34,7 @@ public class Server {
         this.appServer.get("/javascript.js",        WebApiServerHandler::getJavascript);
         this.appServer.get("/index.css",            WebApiServerHandler::getCSS);
         this.appServer.get("/limpopo",              WebApiServerHandler::getLimpopoPage);
-        // this.appServer.get("/images/limpopo.jpg",   WebApiServerHandler::getLimpopoImage);
+        this.appServer.get("/northerncape",         WebApiServerHandler::getNorthenCapePage);
     }
 
     /**
