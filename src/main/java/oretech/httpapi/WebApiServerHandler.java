@@ -94,7 +94,7 @@ public class   WebApiServerHandler {
    public static void getLimpopoPage(Context context) {
       context.contentType("text/html");
 
-      StringBuilder limpopoHTML = new StringBuilder();
+      StringBuilder html = new StringBuilder();
 
       try {
          // Read file
@@ -104,7 +104,7 @@ public class   WebApiServerHandler {
          // Read file content
          while (myReader.hasNextLine()) {
            String data = myReader.nextLine();
-           limpopoHTML.append(data);
+           html.append(data);
          }
          myReader.close();
       } catch (FileNotFoundException e) {
@@ -113,13 +113,13 @@ public class   WebApiServerHandler {
       }
 
       context.status(HttpCode.OK);
-      context.result(limpopoHTML.toString());
+      context.result(html.toString());
    }
 
    public static void getNorthenCapePage(Context context) {
       context.contentType("text/html");
 
-      StringBuilder limpopoHTML = new StringBuilder();
+      StringBuilder html = new StringBuilder();
 
       try {
          // Read file
@@ -129,7 +129,7 @@ public class   WebApiServerHandler {
          // Read file content
          while (myReader.hasNextLine()) {
            String data = myReader.nextLine();
-           limpopoHTML.append(data);
+           html.append(data);
          }
          myReader.close();
       } catch (FileNotFoundException e) {
@@ -138,7 +138,207 @@ public class   WebApiServerHandler {
       }
 
       context.status(HttpCode.OK);
-      context.result(limpopoHTML.toString());
+      context.result(html.toString());
+   }
+
+   public static void getMpumalangaPage(Context context) {
+      context.contentType("text/html");
+
+      StringBuilder html = new StringBuilder();
+
+      try {
+         // Read file
+         File myObj = new File("src/main/resources/html/mpumalanga.html");
+         Scanner myReader = new Scanner(myObj);
+
+         // Read file content
+         while (myReader.hasNextLine()) {
+           String data = myReader.nextLine();
+           html.append(data);
+         }
+         myReader.close();
+      } catch (FileNotFoundException e) {
+         System.out.println("An error occurred.");
+         e.printStackTrace();
+      }
+
+      context.status(HttpCode.OK);
+      context.result(html.toString());
+   }
+
+   public static void getEasternCapePage(Context context) {
+      context.contentType("text/html");
+
+      StringBuilder html = new StringBuilder();
+
+      try {
+         // Read file
+         File myObj = new File("src/main/resources/html/easterncape.html");
+         Scanner myReader = new Scanner(myObj);
+
+         // Read file content
+         while (myReader.hasNextLine()) {
+           String data = myReader.nextLine();
+           html.append(data);
+         }
+         myReader.close();
+      } catch (FileNotFoundException e) {
+         System.out.println("An error occurred.");
+         e.printStackTrace();
+      }
+
+      context.status(HttpCode.OK);
+      context.result(html.toString());
+   }
+
+   public static void getFreeStatePage(Context context) {
+      context.contentType("text/html");
+
+      StringBuilder html = new StringBuilder();
+
+      try {
+         // Read file
+         File myObj = new File("src/main/resources/html/freestate.html");
+         Scanner myReader = new Scanner(myObj);
+
+         // Read file content
+         while (myReader.hasNextLine()) {
+           String data = myReader.nextLine();
+           html.append(data);
+         }
+         myReader.close();
+      } catch (FileNotFoundException e) {
+         System.out.println("An error occurred.");
+         e.printStackTrace();
+      }
+
+      context.status(HttpCode.OK);
+      context.result(html.toString());
+   }
+
+   public static void getGautengPage(Context context) {
+      context.contentType("text/html");
+
+      StringBuilder html = new StringBuilder();
+
+      try {
+         // Read file
+         File myObj = new File("src/main/resources/html/gauteng.html");
+         Scanner myReader = new Scanner(myObj);
+
+         // Read file content
+         while (myReader.hasNextLine()) {
+           String data = myReader.nextLine();
+           html.append(data);
+         }
+         myReader.close();
+      } catch (FileNotFoundException e) {
+         System.out.println("An error occurred.");
+         e.printStackTrace();
+      }
+
+      context.status(HttpCode.OK);
+      context.result(html.toString());
+   }
+
+   public static void getKwaZuluNatalPage(Context context) {
+      context.contentType("text/html");
+
+      StringBuilder html = new StringBuilder();
+
+      try {
+         // Read file
+         File myObj = new File("src/main/resources/html/kwazulunatal.html");
+         Scanner myReader = new Scanner(myObj);
+
+         // Read file content
+         while (myReader.hasNextLine()) {
+           String data = myReader.nextLine();
+           html.append(data);
+         }
+         myReader.close();
+      } catch (FileNotFoundException e) {
+         System.out.println("An error occurred.");
+         e.printStackTrace();
+      }
+
+      context.status(HttpCode.OK);
+      context.result(html.toString());
+   }
+
+   public static void getLesothoPage(Context context) {
+      context.contentType("text/html");
+
+      StringBuilder html = new StringBuilder();
+
+      try {
+         // Read file
+         File myObj = new File("src/main/resources/html/lesotho.html");
+         Scanner myReader = new Scanner(myObj);
+
+         // Read file content
+         while (myReader.hasNextLine()) {
+           String data = myReader.nextLine();
+           html.append(data);
+         }
+         myReader.close();
+      } catch (FileNotFoundException e) {
+         System.out.println("An error occurred.");
+         e.printStackTrace();
+      }
+
+      context.status(HttpCode.OK);
+      context.result(html.toString());
+   }
+
+   public static void getNorthWestPage(Context context) {
+      context.contentType("text/html");
+
+      StringBuilder html = new StringBuilder();
+
+      try {
+         // Read file
+         File myObj = new File("src/main/resources/html/northwest.html");
+         Scanner myReader = new Scanner(myObj);
+
+         // Read file content
+         while (myReader.hasNextLine()) {
+           String data = myReader.nextLine();
+           html.append(data);
+         }
+         myReader.close();
+      } catch (FileNotFoundException e) {
+         System.out.println("An error occurred.");
+         e.printStackTrace();
+      }
+
+      context.status(HttpCode.OK);
+      context.result(html.toString());
+   }
+
+   public static void getWesternCapePage(Context context) {
+      context.contentType("text/html");
+
+      StringBuilder html = new StringBuilder();
+
+      try {
+         // Read file
+         File myObj = new File("src/main/resources/html/westerncape.html");
+         Scanner myReader = new Scanner(myObj);
+
+         // Read file content
+         while (myReader.hasNextLine()) {
+           String data = myReader.nextLine();
+           html.append(data);
+         }
+         myReader.close();
+      } catch (FileNotFoundException e) {
+         System.out.println("An error occurred.");
+         e.printStackTrace();
+      }
+
+      context.status(HttpCode.OK);
+      context.result(html.toString());
    }
 }
 

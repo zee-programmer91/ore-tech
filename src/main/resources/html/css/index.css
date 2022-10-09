@@ -22,11 +22,15 @@ body {
    background-color: rgba(6, 38, 57) ;
 }
 
+.heading {
+   padding-top: 20px;
+}
+
 svg {
    height: 1100px;
 }
 
-#svg- {
+#svg-PLK {
    padding-top: 300px;
    padding-right: 100px;
 }
@@ -35,12 +39,75 @@ svg {
    padding-left: 150px;
 }
 
-.thisLimpopo {
-   padding-top: 20px;
+#svg-MP {
+   padding-top: 210px;
+   padding-right: 150px;
+}
+
+#svg-EC {
+   padding-left: 50px;
+}
+
+#svg-FS {
+   padding-top: 180px;
+}
+
+#svg-GP {
+   padding-top: 380px;
+}
+
+#svg-KZN {
+   padding-top: 120px;
+   padding-right: 155px;
+}
+
+#svg-LES {
+   padding-top: 180px;
+}
+
+#svg-NW {
+   padding-top: 350px;
+   padding-left: 50px;
+}
+
+#svg-WC {
+   padding-left: 120px;
 }
 
 .limpImage {
    text-align: left;
+}
+
+.MPImage {
+   text-align: left;
+}
+
+.ECImage {
+   text-align: right;
+}
+
+.FSImage {
+   text-align: right;
+}
+
+.GPImage {
+   text-align: left;
+}
+
+.LESImage {
+   text-align: left;
+}
+
+.KZNImage {
+   text-align: left;
+}
+
+.NWImage {
+   text-align: right;
+}
+
+.WCImage {
+   text-align: right;
 }
 
 #text-col {

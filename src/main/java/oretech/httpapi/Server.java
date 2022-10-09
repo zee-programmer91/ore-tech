@@ -35,6 +35,14 @@ public class Server {
         this.appServer.get("/index.css",            WebApiServerHandler::getCSS);
         this.appServer.get("/limpopo",              WebApiServerHandler::getLimpopoPage);
         this.appServer.get("/northerncape",         WebApiServerHandler::getNorthenCapePage);
+        this.appServer.get("/mpumalanga",           WebApiServerHandler::getMpumalangaPage);
+        this.appServer.get("/easterncape",          WebApiServerHandler::getEasternCapePage);
+        this.appServer.get("/freestate",            WebApiServerHandler::getFreeStatePage);
+        this.appServer.get("/gauteng",              WebApiServerHandler::getGautengPage);
+        this.appServer.get("/kwazulunatal",         WebApiServerHandler::getKwaZuluNatalPage);
+        this.appServer.get("/lesotho",              WebApiServerHandler::getLesothoPage);
+        this.appServer.get("/northwest",            WebApiServerHandler::getNorthWestPage);
+        this.appServer.get("/westerncape",          WebApiServerHandler::getWesternCapePage);
     }
 
     /**
