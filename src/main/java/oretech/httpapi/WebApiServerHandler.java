@@ -340,5 +340,30 @@ public class   WebApiServerHandler {
       context.status(HttpCode.OK);
       context.result(html.toString());
    }
+
+   public static void getAboutPage(Context context) {
+      context.contentType("text/html");
+
+      StringBuilder html = new StringBuilder();
+
+      try {
+         // Read file
+         File myObj = new File("src/main/resources/html/about.html");
+         Scanner myReader = new Scanner(myObj);
+
+         // Read file content
+         while (myReader.hasNextLine()) {
+           String data = myReader.nextLine();
+           html.append(data);
+         }
+         myReader.close();
+      } catch (FileNotFoundException e) {
+         System.out.println("An error occurred.");
+         e.printStackTrace();
+      }
+
+      context.status(HttpCode.OK);
+      context.result(html.toString());
+   }
 }
 

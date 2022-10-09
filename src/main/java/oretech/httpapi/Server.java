@@ -43,6 +43,7 @@ public class Server {
         this.appServer.get("/lesotho",              WebApiServerHandler::getLesothoPage);
         this.appServer.get("/northwest",            WebApiServerHandler::getNorthWestPage);
         this.appServer.get("/westerncape",          WebApiServerHandler::getWesternCapePage);
+        this.appServer.get("/about",                WebApiServerHandler::getAboutPage);
     }
 
     /**
