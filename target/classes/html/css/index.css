@@ -41,10 +41,6 @@ body {
    animation: fadeIn 10s;
 }
 
-a:hover {
-   color: rgb(236, 198, 150);
-}
-
 .heading {
    padding-top: 20px;
    font-size: 65px;
