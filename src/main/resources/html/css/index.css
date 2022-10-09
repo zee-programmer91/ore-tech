@@ -24,6 +24,13 @@ body {
 
 .heading {
    padding-top: 20px;
+   font-size: 65px;
+   margin-bottom: 50px;
+}
+
+.sub-heading {
+   color: rgb(237, 245, 252);
+   margin-bottom: 30px;
 }
 
 svg {
@@ -40,8 +47,9 @@ svg {
 }
 
 #svg-MP {
-   padding-top: 210px;
-   padding-right: 150px;
+   padding-top: 200px;
+   padding-right: 100px;
+   height: 500px;
 }
 
 #svg-EC {
@@ -110,10 +118,13 @@ svg {
    text-align: right;
 }
 
-#text-col {
-   color: rgb(237, 245, 252);
+.text-col {
    font-size: 20px;
    text-align: left;
    padding-left: 10px;
    font-family: 'Fira Sans', sans-serif;
+}
+
+.text {
+   color: rgb(237, 245, 252);
 }
